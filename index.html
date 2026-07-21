@@ -3,57 +3,208 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Express Charge SRL - European express road transport, freight forwarding, dedicated and time-critical logistics solutions.">
-  <meta name="theme-color" content="#061a31">
-  <title>Express Charge SRL | Moving Europe Together</title>
+  <meta name="description" content="Express Charge SRL — European express transport, freight forwarding and logistics partnerships.">
+  <title>Express Charge SRL | European Logistics</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="Express Charge home"><img src="images/logo.png" alt="Express Charge logo"></a>
-  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+  <a class="brand" href="#home"><img src="images/logo.png" alt="Express Charge logo"></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav id="mainNav" class="main-nav" aria-label="Main navigation">
-    <a href="#home" data-i18n="home">Home</a><a href="#about" data-i18n="about">About Us</a><a href="#services" data-i18n="services">Services</a><a href="#coverage" data-i18n="coverage">Coverage</a><a href="#industries" data-i18n="industries">Industries</a><a href="#contact" data-i18n="contact">Contact</a>
+    <a href="#home" data-i18n="home">Home</a>
+    <a href="#about" data-i18n="about">About Us</a>
+    <a href="#services" data-i18n="services">Services</a>
+    <a href="#coverage" data-i18n="coverage">Coverage</a>
+    <a href="#partners" data-i18n="partners">Partners</a>
+    <a href="#contact" data-i18n="contact">Contact</a>
   </nav>
-  <div class="language" aria-label="Language selector"><button data-lang="en" class="active">EN</button><span>/</span><button data-lang="ro">RO</button></div>
-  <button class="btn btn-primary header-quote" data-open="quote" data-i18n="getQuote">Get a Quote</button>
+  <div class="header-actions">
+    <div class="language-switch" aria-label="Language selector">
+      <button id="langEn" class="lang active" type="button">EN</button>
+      <span>/</span>
+      <button id="langRo" class="lang" type="button">RO</button>
+    </div>
+    <button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button>
+  </div>
 </header>
+
 <main>
 <section id="home" class="hero section-dark">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container hero-grid">
-    <div class="hero-copy reveal"><p class="eyebrow" data-i18n="heroEyebrow">EUROPEAN EXPRESS LOGISTICS</p><h1><span data-i18n="heroLine1">Reliable transport.</span><strong data-i18n="heroLine2">Across Europe.</strong></h1><p class="lead" data-i18n="heroLead">Express road transport and freight forwarding solutions for urgent, dedicated and planned shipments from 1 to 10 pallets.</p><div class="actions"><button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button><a class="btn btn-whatsapp" href="https://wa.me/40735977252?text=Hello%20Express%20Charge%2C%20I%20need%20a%20transport%20quotation." target="_blank" rel="noopener" data-i18n="whatsappDispatch">WhatsApp Dispatch</a></div></div>
-    <div class="metric-row reveal"><button class="metric" data-tip="2013"><b>2013</b><span data-i18n="companyEstablished">Company established</span></button><button class="metric" data-tip="2022"><b>2022</b><span data-i18n="transportActivity">Transport activity</span></button><button class="metric" data-tip="pallets"><b>1-10</b><span data-i18n="palletSolutions">Pallet solutions</span></button><button class="metric" data-tip="eu"><b>EU</b><span data-i18n="europeanCoverage">European coverage</span></button></div>
+  <div class="hero-bg" role="img" aria-label="Express Charge van on European road"></div>
+  <div class="container hero-content">
+    <p class="eyebrow" data-i18n="heroEye">EUROPEAN EXPRESS LOGISTICS</p>
+    <h1><span data-i18n="heroTitle1">Reliable transport.</span><br><strong data-i18n="heroTitle2">Across Europe.</strong></h1>
+    <p class="lead" data-i18n="heroLead">Express road transport and freight forwarding solutions for urgent, dedicated and planned shipments from 1 to 10 pallets.</p>
+    <div class="button-row">
+      <button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button>
+      <a class="btn btn-whatsapp" href="https://wa.me/40735977252?text=Hello%20Express%20Charge%2C%20I%20would%20like%20a%20transport%20quotation." target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp Dispatch</a>
+    </div>
+    <div class="stats">
+      <article><strong>2013</strong><span data-i18n="stat1">Company established</span></article>
+      <article><strong>2022</strong><span data-i18n="stat2">Transport activity</span></article>
+      <article><strong>1–10</strong><span data-i18n="stat3">Pallet solutions</span></article>
+      <article><strong>EU</strong><span data-i18n="stat4">European coverage</span></article>
+    </div>
   </div>
 </section>
 
-<section id="about" class="content-section split">
- <div class="container two-col"><div class="visual"><img src="images/hero-van.jpg" alt="Express Charge van operating across Europe"></div><div class="copy"><p class="eyebrow" data-i18n="aboutEyebrow">ABOUT EXPRESS CHARGE</p><h2 data-i18n="aboutTitle">Connecting Europe with reliable express transport solutions.</h2><p data-i18n="aboutP1">Express Charge is a Romanian company focused on express road transport and freight forwarding across Europe.</p><p data-i18n="aboutP2">Established in 2013 and active in international road transport since 2022, we combine practical road experience with a long-term vision for dependable logistics partnerships.</p><div class="actions"><button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button><a class="btn btn-outline" href="tel:+40735977252" data-i18n="contactDispatch">Contact Dispatch</a><a class="btn btn-outline" href="documents/Express_Charge_Company_Profile.pdf" download data-i18n="downloadProfile">Download Company Profile</a></div></div></div>
+<section id="about" class="section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow" data-i18n="aboutEye">ABOUT EXPRESS CHARGE</p>
+      <h2 data-i18n="aboutTitle">Built from real road experience.</h2>
+      <p data-i18n="aboutP1">Express Charge is a Romanian company focused on express road transport and freight forwarding across Europe.</p>
+      <p data-i18n="aboutP2">Established in 2013 and active in international road transport since 2022, we combine practical transport experience with a long-term vision for reliable logistics partnerships.</p>
+      <p data-i18n="aboutP3">Today, we coordinate flexible solutions for shipments from 1 to 10 pallets through our own operational capacity and a growing network of trusted transport collaborators.</p>
+      <div class="button-row">
+        <button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button>
+        <a class="btn btn-outline" href="mailto:dispatch@expresscharge.ro" data-i18n="dispatch">Contact Dispatch</a>
+        <a class="btn btn-outline" href="mailto:office@expresscharge.ro?subject=Company%20Profile%20Request" data-i18n="download">Download Company Profile</a>
+      </div>
+    </div>
+    <img class="feature-image" src="images/road-experience.jpg" alt="Express Charge road transport experience">
+  </div>
 </section>
 
-<section id="timeline" class="content-section muted"><div class="container"><p class="eyebrow" data-i18n="journey">OUR JOURNEY</p><h2 data-i18n="timelineTitle">Company timeline</h2><div class="timeline">
-<article><b>2013</b><h3 data-i18n="t2013">Company established</h3><p data-i18n="t2013p">Express Charge SRL was established in Romania, laying the foundation for a company built on integrity and long-term vision.</p></article>
-<article><b>2022</b><h3 data-i18n="t2022">International road transport</h3><p data-i18n="t2022p">We began operating internationally and gained practical knowledge of European corridors and customer expectations.</p></article>
-<article><b>2026</b><h3 data-i18n="t2026">Freight forwarding development</h3><p data-i18n="t2026p">We are expanding freight forwarding capabilities and a trusted partner network for flexible 1-10 pallet solutions.</p></article>
-<article><b data-i18n="future">Future</b><h3 data-i18n="tfuture">European logistics expansion</h3><p data-i18n="tfuturep">Our vision is to become a recognized logistics partner integrated in leading European ecosystems.</p></article></div></div></section>
+<section class="section section-muted">
+  <div class="container">
+    <p class="eyebrow" data-i18n="journeyEye">OUR JOURNEY</p>
+    <h2 data-i18n="journeyTitle">Company timeline</h2>
+    <div class="timeline">
+      <article><strong>2013</strong><h3 data-i18n="tl1t">Company established</h3><p data-i18n="tl1p">Express Charge SRL was established in Romania.</p></article>
+      <article><strong>2022</strong><h3 data-i18n="tl2t">International road transport</h3><p data-i18n="tl2p">We began operating on European corridors.</p></article>
+      <article><strong>2026</strong><h3 data-i18n="tl3t">Freight forwarding development</h3><p data-i18n="tl3p">We are expanding our partner network and coordination services.</p></article>
+      <article><strong data-i18n="future">Future</strong><h3 data-i18n="tl4t">European logistics expansion</h3><p data-i18n="tl4p">Our long-term vision is a trusted European logistics partnership portfolio.</p></article>
+    </div>
+  </div>
+</section>
 
-<section id="experience" class="content-section section-dark"><div class="container two-col"><div class="copy"><p class="eyebrow" data-i18n="foundation">OUR FOUNDATION</p><h2 data-i18n="experienceTitle">Built from real road experience.</h2><p data-i18n="experienceP1">Before building Express Charge as a freight forwarding company, we spent years and thousands of kilometres on European roads as drivers.</p><p data-i18n="experienceP2">This practical knowledge guides our communication, planning and responsibility for every shipment.</p><div class="stats"><div><b>12+</b><span data-i18n="countriesServed">countries served</span></div><div><b>1M+</b><span data-i18n="kmRoads">km on European roads</span></div><div><b>50+</b><span data-i18n="trustedPartners">trusted partners</span></div></div></div><div class="visual"><img src="images/road-experience.jpg" alt="Road transport experience across Europe"></div></div></section>
+<section id="services" class="section">
+  <div class="container">
+    <p class="eyebrow" data-i18n="servicesEye">OUR SERVICES</p>
+    <h2 data-i18n="servicesTitle">Flexible logistics solutions for European shipments.</h2>
+    <div class="cards">
+      <article><h3 data-i18n="s1t">Express Road Transport</h3><p data-i18n="s1p">Urgent and time-critical shipments across Europe.</p><button class="text-btn" data-open="quote" data-i18n="request">Request a quote →</button></article>
+      <article><h3 data-i18n="s2t">Dedicated Transport</h3><p data-i18n="s2p">Direct vehicle solutions without unnecessary transhipment.</p><button class="text-btn" data-open="quote" data-i18n="request">Request a quote →</button></article>
+      <article><h3 data-i18n="s3t">Freight Forwarding</h3><p data-i18n="s3p">Carrier selection, coordination, monitoring and communication.</p><button class="text-btn" data-open="partner" data-i18n="partnerTalk">Discuss partnership →</button></article>
+      <article><h3 data-i18n="s4t">1–10 Pallet Solutions</h3><p data-i18n="s4p">Capacity adapted to weight, dimensions, route and urgency.</p><button class="text-btn" data-open="quote" data-i18n="request">Request a quote →</button></article>
+      <article><h3 data-i18n="s5t">Time Critical Logistics</h3><p data-i18n="s5p">Fast operational response and proactive shipment updates.</p><a class="text-btn" href="mailto:dispatch@expresscharge.ro" data-i18n="dispatchNow">Contact dispatch →</a></article>
+      <article><h3 data-i18n="s6t">Carrier Network Solutions</h3><p data-i18n="s6p">Scalable transport capacity through selected collaborators.</p><button class="text-btn" data-open="partner" data-i18n="becomePartner">Become our partner →</button></article>
+    </div>
+  </div>
+</section>
 
-<section id="services" class="content-section"><div class="container"><p class="eyebrow" data-i18n="mission">OUR MISSION</p><h2 data-i18n="missionTitle">Driven by purpose. Focused on you.</h2><p class="section-lead" data-i18n="missionLead">We deliver fast, reliable and flexible logistics solutions that help your business move forward.</p><div class="card-grid five"><article><span>01</span><h3 data-i18n="reliability">Reliability</h3><p data-i18n="reliabilityP">We deliver what we promise. On time, every time.</p></article><article><span>02</span><h3 data-i18n="partnership">Partnership</h3><p data-i18n="partnershipP">We grow together with customers and transport partners.</p></article><article><span>03</span><h3 data-i18n="responsibility">Responsibility</h3><p data-i18n="responsibilityP">We take responsibility for every shipment.</p></article><article><span>04</span><h3 data-i18n="transparency">Transparency</h3><p data-i18n="transparencyP">Clear communication and no surprises.</p></article><article><span>05</span><h3 data-i18n="improvement">Continuous improvement</h3><p data-i18n="improvementP">We evolve every day to offer better solutions.</p></article></div></div></section>
+<section id="coverage" class="section section-dark coverage-section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow" data-i18n="coverageEye">OUR EUROPEAN COVERAGE</p>
+      <h2 data-i18n="coverageTitle">We connect. We deliver. Across Europe.</h2>
+      <p data-i18n="coverageP">We coordinate transport across key European corridors through our own resources and trusted partner network.</p>
+      <div class="country-grid" id="countryGrid"></div>
+    </div>
+    <img class="feature-image" src="images/europe-map.jpg" alt="Express Charge European coverage map">
+  </div>
+</section>
 
-<section id="values" class="content-section muted"><div class="container"><p class="eyebrow" data-i18n="values">OUR VALUES</p><h2 data-i18n="valuesTitle">They define who we are.</h2><div class="card-grid three"><article><span>01</span><h3 data-i18n="integrity">Integrity</h3><p data-i18n="integrityP">Honesty, fairness and transparency in everything we do.</p></article><article><span>02</span><h3 data-i18n="reliability">Reliability</h3><p data-i18n="reliabilityP">We deliver what we promise. On time, every time.</p></article><article><span>03</span><h3 data-i18n="fastCommunication">Fast communication</h3><p data-i18n="fastCommunicationP">Clear, proactive and efficient communication.</p></article><article><span>04</span><h3 data-i18n="responsibility">Responsibility</h3><p data-i18n="responsibilityLong">Full responsibility for every shipment and decision.</p></article><article><span>05</span><h3 data-i18n="customerFocus">Customer focus</h3><p data-i18n="customerFocusP">Our customers' success is our success.</p></article><article><span>06</span><h3 data-i18n="improvement">Continuous improvement</h3><p data-i18n="improvementP">We evolve every day to offer better solutions.</p></article></div></div></section>
+<section id="partners" class="section">
+  <div class="container split reverse-mobile">
+    <img class="feature-image" src="images/partnership.jpg" alt="Express Charge logistics partnership">
+    <div>
+      <p class="eyebrow" data-i18n="partnersEye">LONG-TERM PARTNERSHIPS</p>
+      <h2 data-i18n="partnersTitle">We do not simply look for loads. We offer logistics solutions.</h2>
+      <p data-i18n="partnersP">We build transparent, reliable and long-term relationships with customers, freight forwarders and transport partners throughout Europe.</p>
+      <ul class="checklist">
+        <li data-i18n="p1">Own operational transport experience</li>
+        <li data-i18n="p2">A network of 30–40 collaborating van operators</li>
+        <li data-i18n="p3">Dedicated, express and time-critical mindset</li>
+        <li data-i18n="p4">Direct communication and structured onboarding</li>
+      </ul>
+      <button class="btn btn-primary" data-open="partner" data-i18n="becomePartner">Become Our Partner</button>
+    </div>
+  </div>
+</section>
 
-<section id="why-us" class="content-section"><div class="container two-col"><div class="visual"><img src="images/partnership.jpg" alt="Express Charge logistics partnership"></div><div class="copy"><p class="eyebrow" data-i18n="why">WHY EXPRESS CHARGE?</p><h2 data-i18n="whyTitle">The smart choice for your logistics.</h2><p data-i18n="whyP">We combine real road experience, trusted partnerships and customer-focused solutions to deliver measurable value.</p><ul class="check-list"><li data-i18n="w1">Real road experience</li><li data-i18n="w2">Reliable partner network</li><li data-i18n="w3">On-time delivery</li><li data-i18n="w4">Fast and clear communication</li><li data-i18n="w5">Safe and secure transport</li><li data-i18n="w6">Transparent pricing</li><li data-i18n="w7">Flexible 1-10 pallet solutions</li><li data-i18n="w8">Long-term focus</li></ul></div></div></section>
-
-<section id="industries" class="content-section section-dark"><div class="container"><p class="eyebrow" data-i18n="workWithUs">WHY WORK WITH US?</p><h2 data-i18n="advantageTitle">Your advantage. Our commitment.</h2><div class="card-grid five compact"><article><h3 data-i18n="expressRoad">Express road transport</h3></article><article><h3 data-i18n="dedicated">Dedicated transport</h3></article><article><h3 data-i18n="timeCritical">Time-critical logistics</h3></article><article><h3 data-i18n="freightForwarding">Freight forwarding</h3></article><article><h3 data-i18n="carrierNetwork">Carrier network solutions</h3></article><article><h3 data-i18n="automotive">Automotive logistics</h3></article><article><h3 data-i18n="industrial">Industrial shipments</h3></article><article><h3 data-i18n="medical">Medical & urgent goods</h3></article><article><h3 data-i18n="retail">Retail & e-commerce</h3></article><article><h3 data-i18n="crossBorder">Cross-border coordination</h3></article></div></div></section>
-
-<section id="coverage" class="content-section coverage-section"><div class="container two-col"><div class="copy"><p class="eyebrow" data-i18n="ourCoverage">OUR EUROPEAN COVERAGE</p><h2 data-i18n="coverageTitle">We connect. We deliver. Across Europe.</h2><p data-i18n="coverageP">Through trusted partners and strategic corridors, we coordinate fast and reliable collections and deliveries across Europe.</p><div class="country-buttons" id="countryButtons"></div><div id="countryInfo" class="country-info" aria-live="polite"></div></div><div class="visual"><img src="images/europe-map.jpg" alt="Express Charge European coverage map"></div></div></section>
-
-<section id="contact" class="content-section contact-section"><div class="container"><p class="eyebrow" data-i18n="thankYou">THANK YOU FOR VISITING</p><h2 data-i18n="contactTitle">Let's move Europe together.</h2><div class="contact-grid"><aside><h3 data-i18n="getInTouch">Get in touch</h3><a href="tel:+40735977252">+40 735 977 252</a><a href="mailto:transport@expresscharge.ro">transport@expresscharge.ro</a><a href="mailto:office@expresscharge.ro">office@expresscharge.ro</a><a href="mailto:dispatch@expresscharge.ro">dispatch@expresscharge.ro</a><span>Bucharest, Romania</span></aside><div class="help-grid"><button data-open="quote"><b data-i18n="requestQuote">Request a quote</b><span data-i18n="requestQuoteP">Get a tailored offer in minutes.</span></button><a href="tel:+40735977252"><b data-i18n="dispatchSupport">Dispatch support</b><span data-i18n="dispatchSupportP">Our team is ready to organize your transport.</span></a><button data-open="track"><b data-i18n="trackShipment">Track your shipment</b><span data-i18n="trackShipmentP">Request an operational status update.</span></button><button data-open="partner"><b data-i18n="becomePartner">Become our partner</b><span data-i18n="becomePartnerP">Join our European partner network.</span></button><a href="mailto:office@expresscharge.ro"><b data-i18n="customerService">Customer service</b><span data-i18n="customerServiceP">We are here to support you.</span></a></div></div></div></section>
+<section id="contact" class="section contact-section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow" data-i18n="contactEye">GET IN TOUCH</p>
+      <h2 data-i18n="contactTitle">How can we help you?</h2>
+      <p data-i18n="contactP">Our team is ready to discuss your transport, partnership or dispatch requirements.</p>
+      <div class="contact-list">
+        <a href="tel:+40735977252">+40 735 977 252</a>
+        <a href="mailto:transport@expresscharge.ro">transport@expresscharge.ro</a>
+        <a href="mailto:office@expresscharge.ro">office@expresscharge.ro</a>
+        <a href="mailto:dispatch@expresscharge.ro">dispatch@expresscharge.ro</a>
+        <span>Bucharest, Romania</span>
+      </div>
+      <div class="button-row">
+        <button class="btn btn-primary" data-open="quote" data-i18n="getQuote">Get a Quote</button>
+        <a class="btn btn-whatsapp" href="https://wa.me/40735977252" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="btn btn-outline dark" data-open="track" data-i18n="track">Track Your Shipment</button>
+      </div>
+    </div>
+    <img class="feature-image" src="images/contact-hero.jpg" alt="Contact Express Charge">
+  </div>
+</section>
 </main>
-<footer><div class="container footer-grid"><img src="images/logo.png" alt="Express Charge"><div><b>EXPRESS CHARGE SRL</b><p>Express Transport & Freight Forwarding</p><p>Moving Europe Together</p></div><div><a href="tel:+40735977252">+40 735 977 252</a><a href="mailto:transport@expresscharge.ro">transport@expresscharge.ro</a><a href="mailto:office@expresscharge.ro">office@expresscharge.ro</a></div><div><p>Established 2013</p><p>International transport since 2022</p><p>© <span id="year"></span> Express Charge SRL</p></div></div></footer>
 
-<div class="modal" id="modal" hidden><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" aria-label="Close">×</button><div id="modalContent"></div></div></div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body></html>
+<footer>
+  <div class="container footer-grid">
+    <img src="images/logo.png" alt="Express Charge logo">
+    <p>EXPRESS CHARGE SRL<br><span data-i18n="footerTag">Moving Europe Together</span></p>
+    <p>© <span id="year"></span> Express Charge SRL. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="modal" id="quoteModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <h2 id="quoteTitle" data-i18n="quoteTitle">Request a transport quotation</h2>
+    <form id="quoteForm">
+      <div class="form-grid">
+        <label><span data-i18n="company">Company</span><input name="company" required></label>
+        <label><span data-i18n="contactData">Email / phone</span><input name="contact" required></label>
+        <label><span data-i18n="origin">Loading location</span><input name="origin" required></label>
+        <label><span data-i18n="destination">Delivery location</span><input name="destination" required></label>
+        <label><span data-i18n="date">Loading date</span><input type="date" name="date" required></label>
+        <label><span data-i18n="pallets">Pallets</span><input type="number" name="pallets" min="1" max="99" required></label>
+        <label><span data-i18n="weight">Weight (kg)</span><input type="number" name="weight" min="1" required></label>
+        <label class="wide"><span data-i18n="goods">Goods, dimensions and notes</span><textarea name="goods" rows="4" required></textarea></label>
+      </div>
+      <button class="btn btn-primary" type="submit" data-i18n="sendQuote">Prepare email request</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="partnerModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="partnerTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <h2 id="partnerTitle" data-i18n="partnerTitle">Become an Express Charge partner</h2>
+    <form id="partnerForm">
+      <div class="form-grid">
+        <label><span data-i18n="company">Company</span><input name="company" required></label>
+        <label><span data-i18n="country">Country</span><input name="country" required></label>
+        <label><span data-i18n="contactData">Email / phone</span><input name="contact" required></label>
+        <label><span data-i18n="fleet">Fleet / services</span><input name="fleet" required></label>
+        <label class="wide"><span data-i18n="message">Partnership message</span><textarea name="message" rows="5" required></textarea></label>
+      </div>
+      <button class="btn btn-primary" type="submit" data-i18n="sendPartner">Prepare partnership email</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="trackModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="trackTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <h2 id="trackTitle" data-i18n="trackTitle">Request shipment status</h2>
+    <form id="trackForm">
+      <label><span data-i18n="reference">Shipment reference / CMR</span><input name="reference" required></label>
+      <label><span data-i18n="contactData">Email / phone</span><input name="contact" required></label>
+      <button class="btn btn-primary" type="submit" data-i18n="sendTrack">Prepare status email</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,12 +1,15 @@
-# Express Charge Website
+# Express Charge – real functional rebuild
 
-Interactive rebuild of the existing Express Charge website.
+This version no longer uses the 10 presentation pages as full-page images. It uses the original logo, fleet, road, partnership, map and contact images, while all visible text is real selectable HTML.
 
-- All visible text is real HTML and can be selected/copied.
-- EN and RO are separate functional language buttons.
-- Quote, tracking and partner buttons open working forms.
-- Phone, email and WhatsApp links are active.
-- The visual assets from `images/` remain in use.
-- `pages/` contains the original approved image prototypes for reference only; they are no longer used as full-page website content.
+Functional items:
+- EN / RO language buttons
+- responsive menu
+- quote modal + prefilled email
+- partner modal + prefilled email
+- shipment status modal + prefilled email
+- phone, email and WhatsApp links
+- interactive country buttons
+- real selectable/copyable text
 
-Deploy the repository root to Vercel.
+Before production: add the final company-profile.pdf to the project root. Without it, the download button cannot download that document.
