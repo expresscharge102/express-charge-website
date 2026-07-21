@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Express Charge SRL — express road transport, freight forwarding and European logistics solutions.">
+  <title>Express Charge SRL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="page page-home" id="home">
+      <img src="pages/page-01.jpg" alt="Express Charge home page — Reliable transport across Europe">
+      <nav class="hotspots" aria-label="Home page navigation">
+        <a class="hotspot about" href="#about" aria-label="About"></a>
+        <a class="hotspot services" href="#services" aria-label="Services"></a>
+        <a class="hotspot coverage" href="#coverage" aria-label="Coverage"></a>
+        <a class="hotspot partners" href="#partners" aria-label="Partners"></a>
+        <a class="hotspot contact" href="#contact" aria-label="Contact"></a>
+        <a class="hotspot quote-top" href="mailto:transport@expresscharge.ro?subject=Transport%20quotation%20request" aria-label="Get a quote"></a>
+        <a class="hotspot quote-main" href="mailto:transport@expresscharge.ro?subject=Transport%20quotation%20request" aria-label="Get a quote"></a>
+        <a class="hotspot whatsapp-main" href="https://wa.me/40735977252" target="_blank" rel="noopener" aria-label="WhatsApp dispatch"></a>
+      </nav>
+    </section>
+
+    <section class="page" id="about">
+      <img src="pages/page-02.jpg" alt="About Express Charge">
+    </section>
+
+    <section class="page">
+      <img src="pages/page-03.jpg" alt="Express Charge company timeline">
+    </section>
+
+    <section class="page">
+      <img src="pages/page-04.jpg" alt="Built from real road experience">
+    </section>
+
+    <section class="page" id="services">
+      <img src="pages/page-05.jpg" alt="Express Charge mission">
+    </section>
+
+    <section class="page">
+      <img src="pages/page-06.jpg" alt="Express Charge core values">
+    </section>
+
+    <section class="page" id="partners">
+      <img src="pages/page-07.jpg" alt="Why choose Express Charge">
+    </section>
+
+    <section class="page">
+      <img src="pages/page-08.jpg" alt="Why work with Express Charge">
+    </section>
+
+    <section class="page" id="coverage">
+      <img src="pages/page-09.jpg" alt="Express Charge European coverage">
+    </section>
+
+    <section class="page page-contact" id="contact">
+      <img src="pages/page-10.jpg" alt="Contact Express Charge">
+      <div class="contact-hotspots" aria-label="Contact links">
+        <a class="contact-phone" href="tel:+40735977252" aria-label="Call Express Charge"></a>
+        <a class="contact-email" href="mailto:transport@expresscharge.ro" aria-label="Email transport department"></a>
+        <a class="contact-whatsapp" href="https://wa.me/40735977252" target="_blank" rel="noopener" aria-label="WhatsApp Express Charge"></a>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+</body>
+</html>

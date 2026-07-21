@@ -1,24 +1,12 @@
-# Express Charge SRL — website identic cu prototipul PDF
+# Express Charge Website
 
-Această versiune folosește fiecare pagină din prototipul aprobat ca imagine web, pentru a păstra identic:
-- designul;
-- logo-ul;
-- fundalurile;
-- textele;
-- culorile;
-- hărțile;
-- structura vizuală.
+Interactive rebuild of the existing Express Charge website.
 
-## Publicare
-Încărcați în același repository GitHub:
-- index.html
-- styles.css
-- vercel.json
-- folderul pages
+- All visible text is real HTML and can be selected/copied.
+- EN and RO are separate functional language buttons.
+- Quote, tracking and partner buttons open working forms.
+- Phone, email and WhatsApp links are active.
+- The visual assets from `images/` remain in use.
+- `pages/` contains the original approved image prototypes for reference only; they are no longer used as full-page website content.
 
-Vercel va publica automat noua versiune.
-
-## Linkuri active
-- Get a Quote → transport@expresscharge.ro
-- WhatsApp → +40 735 977 252
-- Contact telefon și e-mail pe ultima pagină
+Deploy the repository root to Vercel.
