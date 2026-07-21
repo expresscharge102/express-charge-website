@@ -19,3 +19,9 @@ Before production: add the final company-profile.pdf to the project root. Withou
 - Permite zoom, deplasare, selectarea țărilor, markere pentru orașe, căutare liberă și identificarea unui punct apăsat pe hartă.
 - Căutarea și harta necesită conexiune la internet în browser.
 - Imaginea din secțiunea Contact a fost încadrată într-un container dedicat și centrată corect.
+
+## V3 – Contact image correction
+- The interactive OpenStreetMap coverage section is preserved.
+- All existing buttons, forms, language switching and contact actions are preserved.
+- Only the Contact section image was replaced with the user-approved van image.
+- The image frame now uses the image's native 507:385 aspect ratio and centered positioning, preventing black bars and incorrect cropping.
